@@ -1,6 +1,6 @@
-from ListaFamiliares.views import listadoFamiliar
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', "template.html", listadoFamiliar),
+    path('', views.listadoFamiliar, name="listadoFamiliar"),
 ]
